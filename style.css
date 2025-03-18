@@ -286,7 +286,6 @@ ul a{
 
 
 
-
 /* Responsive Design */
 
 /* General Responsive Fixes */
@@ -308,7 +307,7 @@ body {
         justify-content: space-between;
     }
     .nav-search {
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -320,7 +319,7 @@ body {
         padding: 10px 0;
     }
     .nav-search {
-        width: 90%;
+        width: 95%;
         margin-top: 10px;
     }
     .panel-option {
@@ -330,12 +329,15 @@ body {
         text-align: center;
         width: 100%;
     }
+    .cart-icon {
+        margin-top: 10px;
+    }
 }
 
 /* Hero Section Responsive */
 @media (max-width: 768px) {
     .hero-section {
-        height: 250px;
+        height: 220px;
         background-size: cover;
     }
     .hero-msg {
@@ -347,7 +349,7 @@ body {
 
 @media (max-width: 480px) {
     .hero-section {
-        height: 200px;
+        height: 180px;
     }
     .hero-msg {
         font-size: 0.75rem;
@@ -360,13 +362,13 @@ body {
         justify-content: center;
     }
     .box {
-        width: 45%;
+        width: 48%;
     }
 }
 
 @media (max-width: 768px) {
     .box {
-        width: 80%;
+        width: 90%;
         margin-bottom: 20px;
     }
 }
@@ -378,6 +380,10 @@ body {
     }
     .box-content h2 {
         font-size: 1rem;
+    }
+    .box img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -402,7 +408,7 @@ body {
         padding: 10px;
     }
     .nav-search {
-        width: 95%;
+        width: 100%;
         margin-bottom: 10px;
     }
     .panel {
@@ -417,12 +423,16 @@ body {
         font-size: 0.8rem;
         padding: 10px;
     }
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* Additional Mobile Tweaks */
 @media (max-width: 375px) {
     .hero-section {
-        height: 180px;
+        height: 160px;
     }
     .nav-search {
         width: 100%;
@@ -433,5 +443,101 @@ body {
     .foot-panel1 {
         font-size: 0.75rem;
     }
+    .nav-links {
+        font-size: 0.9rem;
+    }
 }
 
+/* Navbar Fixes */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav-search {
+        width: 95%;
+        margin-top: 10px;
+    }
+    .panel-option {
+        display: none;
+    }
+    .nav-links {
+        text-align: center;
+        width: 100%;
+    }
+    .cart-icon {
+        margin-top: 10px;
+    }
+}
+
+/* Hero Section Fix */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 220px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-msg {
+        font-size: 0.85rem;
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 180px;
+    }
+    .hero-msg {
+        font-size: 0.75rem;
+    }
+}
+
+/* Shop Section Fix */
+@media (max-width: 1024px) {
+    .shop-section {
+        justify-content: center;
+    }
+    .box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .box-content h2 {
+        font-size: 1rem;
+    }
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Footer Fixes */
+@media (max-width: 768px) {
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .foot-panel2 ul {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
